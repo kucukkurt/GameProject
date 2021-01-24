@@ -36,9 +36,9 @@ namespace GameProject
                         Console.WriteLine("*****************************");
                         Console.WriteLine("1 - New User\n2 - Update User\n3 - Delete User");
                         Console.WriteLine("*****************************");
-                        UserManagement UserChoice = (UserManagement)Convert.ToInt32(Console.ReadLine());
+                        UserManagement UserManagement = (UserManagement)Convert.ToInt32(Console.ReadLine());
 
-                        switch (UserChoice)
+                        switch (UserManagement)
                         {
                             case UserManagement.NewUser:
                                 //_player = player;
@@ -62,10 +62,56 @@ namespace GameProject
                         break;
 
                     case MainMenu.Campaign:
-                        // need to be write Campaign.
+
+                        Console.Clear();
+                        Console.WriteLine("*****************************");
+                        Console.WriteLine("1 - Entry Campaign\n2 - Update Campaign\n3 - Delete Campaign");
+                        Console.WriteLine("*****************************");
+                        Campaign UserCampaign = (Campaign)Convert.ToInt32(Console.ReadLine());
+
+
+                        switch (UserCampaign)
+                        {
+                            case Campaign.Entry:
+                                //todo need to be write here.
+                                break;
+                            case Campaign.Update:
+                                //todo need to be write here.
+                                break;
+                            case Campaign.Delete:
+                                //todo need to be write here.
+                                break;
+                            default:
+                                //todo need to be write here.
+                                break;
+                        }
                         break;
+
                     case MainMenu.GameSales:
-                        //need to be write Game Sales.
+
+                        Console.Clear();
+                        Console.WriteLine("*****************************");
+                        Console.WriteLine("1 - List of Game\n2 - Current Games\n3 - Buy a Game\n4 - Give Back");
+                        Console.WriteLine("*****************************");
+                        GameSales UserGameSales = (GameSales)Convert.ToInt32(Console.ReadLine());
+
+                        switch (UserGameSales)
+                        {
+                            case GameSales.ListofGame:
+                                //todo need to be write here.
+                                break;
+                            case GameSales.CurrentGames:
+                                //todo need to be write here.
+                                break;
+                            case GameSales.BuyAGame:
+                                //todo need to be write here.
+                                break;
+                            case GameSales.GiveBack:
+                                //todo need to be write here.
+                                break;
+                            default:
+                                break;
+                        }
                         break;
 
                     default:
